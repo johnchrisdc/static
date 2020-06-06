@@ -4,7 +4,7 @@
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
 /* =================================== */
-/*  Basic Style 
+/*  Basic Style
 /* =================================== */
 ::-moz-selection {
   /* Code for Firefox */
@@ -1946,9 +1946,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .p1-gradient-bg, .primary-btn, .banner-area, .cat-area .hb-facebook-inv:hover, .cat-area .hb-facebook-inv:hover::after, .cat-area .hb-facebook-inv:hover::before, .single-service:hover, .video-area .overlay-bg, .single-price:hover .bottom-sec, .single-price:hover .end-sec, .call-to-action-area, .footer-area .primary-btn, .footer-area .primary-btn:hover, .footer-social a:hover, .single-footer-widget .bb-btn, .generic-banner {
-  background-image: -moz-linear-gradient(0deg, #3ea7ff 0%, #42d1ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #3ea7ff 0%, #42d1ff 100%);
-  background-image: -ms-linear-gradient(0deg, #3ea7ff 0%, #42d1ff 100%);
+  background-image: -moz-linear-gradient(0deg, #7066c6 0%, #7066c6 100%);
+  background-image: -webkit-linear-gradient(0deg, #7066c6 0%, #7066c6 100%);
+  background-image: -ms-linear-gradient(0deg, #7066c6 0%, #7066c6 100%);
 }
 
 .p1-gradient-color, .counter-left h2 {

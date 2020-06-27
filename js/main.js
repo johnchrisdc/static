@@ -33,7 +33,7 @@ $(document).ready(function(){
   //     $('.navbar-collapse').collapse('hide');
   // });
 
-  //  Counter Js 
+  //  Counter Js
 
   $('.counter').counterUp({
       delay: 10,
@@ -52,23 +52,27 @@ $(document).ready(function(){
 
 
     $('.active-feature-carusel').owlCarousel({
-        items:3,
+        items:7,
         loop:true,
         autoplay:true,
         margin:30,
         nav:true,
+    		autoWidth:true,
         navText: ["<span class='lnr lnr-arrow-up'></span>","<span class='lnr lnr-arrow-down'></span>"],
-        responsive:{    
-        0:{
-          items: 1
-        },
-        414:{
-          items: 2
-        },
-        768:{
-          items: 3
-        }
-    }
+        responsive:{
+	        0:{
+	    			autoWidth:false,
+				    items:1,
+	        },
+	        414:{
+	    			autoWidth:false,
+				    items:2,
+	        },
+	        768:{
+			     items:3,
+
+	        }
+	    }
     });
 
 
@@ -80,8 +84,8 @@ $(document).ready(function(){
   .on('click',function(event) {
   // On-page links
   if (
-    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-    && 
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    &&
     location.hostname == this.hostname
   ) {
     // Figure out element to scroll to
@@ -112,6 +116,6 @@ $(document).ready(function(){
 
       $(document).ready(function() {
           $('#mc_embed_signup').find('form').ajaxChimp();
-      });   
+      });
 
  });

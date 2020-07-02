@@ -1,665 +1,583 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/favicon.png">
-		<!-- Author Meta -->
-		<meta name="author" content="colorlib">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
 
-		<meta name="theme-color" content="#1c1c1c">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/favicon.png">
+	<!-- Author Meta -->
+	<meta name="author" content="colorlib">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
 
-		<!-- Site Title -->
-		<title>Quick E-Mart - Let's build your dream app better, together.</title>
+	<meta name="theme-color" content="#1c1c1c">
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-			<!--
+	<!-- Site Title -->
+	<title>Quick E-Mart - Let's build your dream app better, together.</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!--
 			CSS
 			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/hexagons.min.css">
-			<link rel="stylesheet" href="css/main.css">
-		</head>
-		<body>
-			<!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v7.0'
-          });
-        };
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/hexagons.min.css">
+	<link rel="stylesheet" href="css/main.css">
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+	<style>
+		.single-price:hover .top-sec,
+		.single-price:hover .bottom-sec,
+		.single-price:hover .end-sec {
+			background-image: -moz-linear-gradient(0deg, #7066c6 0%, #7066c6 100%);
+			background-image: -webkit-linear-gradient(0deg, #7066c6 0%, #7066c6 100%);
+			background-image: -ms-linear-gradient(0deg, #7066c6 0%, #7066c6 100%);
+		}
 
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="487690934635501"
-  			theme_color="#0084ff">
-      </div>
+		.single-price:hover .top-sec,
+		.single-price:hover .bottom-sec,
+		.single-price:hover .end-sec {
+			box-shadow: 0px 20px 20px 0px rgba(157, 157, 157, 0.5);
+			color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				xfbml: true,
+				version: 'v7.0'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!-- Your Chat Plugin code -->
+	<div class="fb-customerchat" attribution=setup_tool page_id="487690934635501" theme_color="#0084ff">
+	</div>
 
 
-			<!-- start banner Area -->
-			<section class="banner-area" id="home">
-			<!-- Start Header Area -->
-			<header class="default-header">
-				<nav class="navbar navbar-expand-lg  navbar-light">
-					<div class="container">
-						  <a class="navbar-brand" href="index.html">
-						  	<img src="img/quickelogo-0.png" alt="">
-						  </a>
-						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						    <span class="lnr lnr-menu"></span>
-						  </button>
-
-						  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-						    <ul class="navbar-nav">
-								<li><a href="#home">Home</a></li>
-								<li><a href="#service">Service</a></li>
-								<li><a href="#feature">feature</a></li>
-								<li><a href="#price">price</a></li>
-								<li><a href="#faq">Faq</a></li>
-								<!-- Dropdown -->
-							    <li class="dropdown">
-							      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-							        Pages
-							      </a>
-							      <div class="dropdown-menu">
-							        <a class="dropdown-item" href="generic.html">Generic</a>
-							        <a class="dropdown-item" href="elements.html">Elements</a>
-							      </div>
-							    </li>
-						    </ul>
-						  </div>
-					</div>
-				</nav>
-			</header>
-			<!-- End Header Area -->
+	<!-- start banner Area -->
+	<section class="banner-area" id="home">
+		<!-- Start Header Area -->
+		<header class="default-header">
+			<nav class="navbar navbar-expand-lg  navbar-light">
 				<div class="container">
-					<div class="row justify-content-end fullscreen align-items-center">
-						<div class="col-lg-6 col-md-12 banner-left">
-								<h1 class="text-white">
-									Let's build your eCommerce app better, together.
-								</h1>
-								<!-- <p class="mx-auto text-white  mt-20 mb-40">
+					<a class="navbar-brand" href="index.html">
+						<img src="img/quickelogo-0.png" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="lnr lnr-menu"></span>
+					</button>
+
+					<div class="collapse navbar-collapse justify-content-end align-items-center"
+						id="navbarSupportedContent">
+						<ul class="navbar-nav">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#screenshots">Screenshots</a></li>
+							<li><a href="#price">Price</a></li>
+							<li><a href="#faq">Faq</a></li>
+							<li><a href="https://m.me/RadioActivePotatoProject">Contact Us</a></li>
+							<!-- Dropdown -->
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- End Header Area -->
+		<div class="container">
+			<div class="row justify-content-end fullscreen align-items-center">
+				<div class="col-lg-6 col-md-12 banner-left">
+					<h1 class="text-white">
+						Let's build your eCommerce app better, together.
+					</h1>
+					<!-- <p class="mx-auto text-white  mt-20 mb-40">
 									If the user can't find it, the feature isn't there.
 								</p> -->
-								<a href="#quickemart" class="text-uppercase header-btn">Learn more</span></a>
-						</div>
-						<div class="col-lg-6 col-md-12 no-padding banner-right">
-							<center>
-								<img class="img-fluid" src="img/header-img.png" alt="">
-							</center>
-						</div>
+					<a href="#quickemart" class="text-uppercase header-btn">Learn more</span></a>
+				</div>
+				<div class="col-lg-6 col-md-12 no-padding banner-right">
+					<center>
+						<img class="img-fluid" src="img/header-img.png" alt="">
+					</center>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+
+	<!-- Start cat Area -->
+	<section class="cat-area section-gap" id="quickemart">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-60 col-lg-8">
+					<div class="title text-center">
+						<h1 class="mb-10">Quick-E solution for your business</h1>
+						<p>QuickEmart is designed to provide fast and reliable eCommerce app<br>for different types of
+							business (B2C).</p>
 					</div>
 				</div>
-			</section>
-			<!-- End banner Area -->
-
-			<!-- Start cat Area -->
-			<section class="cat-area section-gap" id="quickemart">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Quick-E solution for your business</h1>
-								<p>QuickEmart is designed to provide fast and reliable eCommerce app<br>for different types of business (B2C).</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="single-cat d-flex flex-column">
-								<a class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-dinner"></span></span></a>
-								<h4 class="mb-20" style="margin-top: 23px;">Food & Drink</h4>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-cat">
-								<a class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-shirt"></span></span></a>
-								<h4 class="mt-40 mb-20">Fashion</h4>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-cat">
-								<a class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-cart"></span></span></a>
-								<h4 class="mt-40 mb-20">Grocery</h4>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-cat">
-								<a class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-store"></span></span></a>
-								<h4 class="mt-40 mb-20">Merchandise</h4>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-cat">
-								<a class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-diamond"></span></span></a>
-								<h4 class="mt-40 mb-20">Accessories</h4>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-cat">
-								<a class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-home"></span></span></a>
-								<h4 class="mt-40 mb-20">Home & Decor</h4>
-							</div>
-						</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="single-cat d-flex flex-column">
+						<a class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span
+									class="lnr lnr-dinner"></span></span></a>
+						<h4 class="mb-20" style="margin-top: 23px;">Food & Drink</h4>
 					</div>
 				</div>
-			</section>
-			<!-- End cat Area -->
-
-
-			<!-- Start about Area -->
-			<section class="about-area section-gap" id="color-picker" :style="'background-color:' + colors.hex + ';'">
-				<div class="container">
-					<div class="row justify-content-center align-items-center d-flex">
-						<div class="col-lg-6 about-left">
-							<img class="img-fluid" src="img/about-img.png" alt="">
-						</div>
-						<div class="col-lg-6 about-right">
-							<center>
-								<h1>
-									Branding.. yep, that's it.
-								</h1>
-								<p class="" style="color:#000">
-									Choose the color that matches your business branding.
-									<br>From dark to light to mute to whatever you like.
-								</p>
-								<compact-picker v-model="colors"
-								:palette="pallete" />
-							</center>
-						</div>
+				<div class="col-lg-4">
+					<div class="single-cat">
+						<a class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span
+									class="lnr lnr-shirt"></span></span></a>
+						<h4 class="mt-40 mb-20">Fashion</h4>
 					</div>
 				</div>
-			</section>
-			<!-- End about Area -->
+				<div class="col-lg-4">
+					<div class="single-cat">
+						<a class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span
+									class="lnr lnr-cart"></span></span></a>
+						<h4 class="mt-40 mb-20">Grocery</h4>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="single-cat">
+						<a class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span
+									class="lnr lnr-store"></span></span></a>
+						<h4 class="mt-40 mb-20">Merchandise</h4>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="single-cat">
+						<a class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span
+									class="lnr lnr-diamond"></span></span></a>
+						<h4 class="mt-40 mb-20">Accessories</h4>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="single-cat">
+						<a class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span
+									class="lnr lnr-home"></span></span></a>
+						<h4 class="mt-40 mb-20">Home & Decor</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End cat Area -->
 
-			<!-- Start about Area -->
-			<section class="about-area section-gap">
-				<div class="container">
-					<div class="row justify-content-center align-items-center d-flex">
-						<div class="col-lg-6 about-left">
-							<center>
-								<h1>
-									Manage your store anytime, anywhere.
-								</h1>
-								<p class="mt-20">
-									With a web-based dashboard, you can manage and monitor
-									<br>your store on any device.
-								</p>
-							</center>
+
+	<!-- Start about Area -->
+	<section class="about-area section-gap" id="color-picker" :style="'background-color:' + colors.hex + ';'">
+		<div class="container">
+			<div class="row justify-content-center align-items-center d-flex">
+				<div class="col-lg-6 about-left">
+					<img class="img-fluid" src="img/about-img.png" alt="">
+				</div>
+				<div class="col-lg-6 about-right">
+					<center>
+						<h1>
+							Branding.. yep, that's it.
+						</h1>
+						<p class="" style="color:#000">
+							Choose the color that matches your business branding.
+							<br>From dark to light to mute to whatever you like.
+						</p>
+						<compact-picker v-model="colors" :palette="pallete" />
+					</center>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End about Area -->
+
+	<!-- Start about Area -->
+	<section class="about-area section-gap">
+		<div class="container">
+			<div class="row justify-content-center align-items-center d-flex">
+				<div class="col-lg-6 about-left">
+					<center>
+						<h1>
+							Manage your store anytime, anywhere.
+						</h1>
+						<p class="mt-20">
+							With a web-based dashboard, you can manage and monitor
+							<br>your store on any device.
+						</p>
+					</center>
+				</div>
+				<div class="col-lg-6 about-right">
+					<img class="img-fluid" src="img/screenshot_web_1.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End about Area -->
+
+	<!-- Start feature Area -->
+	<section class="service-area section-gap" id="features">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-60 col-lg-8">
+					<div class="title text-center">
+						<h1 class="mb-10">Features</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4  col-md-6 mb-30">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f1.png" alt="">
+						<h4><a href="#">Real-time monitoring</a></h4>
+					</div>
+				</div>
+				<div class="col-lg-4  col-md-6 mb-30">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f1.png" alt="">
+						<h4><a href="#">Item Categories</a></h4>
+					</div>
+				</div>
+				<div class="col-lg-4  col-md-6 mb-30">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f1.png" alt="">
+						<h4><a href="#">Item Add Ons</a></h4>
+					</div>
+				</div>
+				<div class="col-lg-4  col-md-6 mb-30">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f2.png" alt="">
+						<h4><a href="#">Item variations</a></h4>
+					</div>
+				</div>
+				<div class="col-lg-4  col-md-6 mb-30">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f3.png" alt="">
+						<h4><a href="#">Banners</a></h4>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 ">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f4.png" alt="">
+						<h4><a href="#">Dynamic Delivery Zones</a></h4>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 ">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f5.png" alt="">
+						<h4><a href="#">Reports</a></h4>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 ">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f6.png" alt="">
+						<h4><a href="#">Delivery App</a></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End feature Area -->
+
+
+
+	<!-- Start feature Area -->
+	<section class="feature-area section-gap" id="screenshots">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-60 col-lg-8">
+					<div class="title text-center">
+						<h1 class="mb-10">Next stop, screenshots</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="active-feature-carusel">
+					<div class="item single-carusel relative">
+						<div class="image-wrap">
+							<img class="img-fluid" src="img/screenshot_1.png" alt="">
 						</div>
-						<div class="col-lg-6 about-right">
+					</div>
+					<div class="item single-carusel relative">
+						<div class="image-wrap">
+							<img class="img-fluid" src="img/screenshot_2.png" alt="">
+						</div>
+
+					</div>
+					<div class="item single-carusel relative">
+						<div class="image-wrap">
+							<img class="img-fluid" src="img/screenshot_3.png" alt="">
+						</div>
+					</div>
+					<div class="item single-carusel relative">
+						<div class="image-wrap">
+							<img class="img-fluid" src="img/screenshot_4.png" alt="">
+						</div>
+					</div>
+					<div class="item single-carusel relative">
+						<div class="image-wrap">
 							<img class="img-fluid" src="img/screenshot_web_1.png" alt="">
 						</div>
 					</div>
-				</div>
-			</section>
-			<!-- End about Area -->
-
-			<!-- Start service Area -->
-			<section class="service-area section-gap" id="feature">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">What made us unique?</h1>
-								<p>(We love bikes!)</p>
-							</div>
+					<div class="item single-carusel relative">
+						<div class="image-wrap">
+							<img class="img-fluid" src="img/screenshot_web_2.png" alt="">
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-lg-4  col-md-6 mb-30">
-							<div class="single-service">
-								<img class="d-block mx-auto mb-30" src="img/f1.png" alt="">
-								<h4><a href="#">Real-time monitoring</a></h4>
-							</div>
-						</div>
-						<div class="col-lg-4  col-md-6 mb-30">
-							<div class="single-service">
-								<img class="d-block mx-auto mb-30" src="img/f2.png" alt="">
-								<h4><a href="#">Fast updates</a></h4>
-							</div>
-						</div>
-						<div class="col-lg-4  col-md-6 mb-30">
-							<div class="single-service">
-								<img class="d-block mx-auto mb-30" src="img/f3.png" alt="">
-								<h4><a href="#">Great Support</a></h4>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-service">
-								<img class="d-block mx-auto mb-30" src="img/f4.png" alt="">
-								<h4><a href="#">We don't get sales commision</a></h4>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-service">
-								<img class="d-block mx-auto mb-30" src="img/f5.png" alt="">
-								<h4><a href="#">Professional Service</a></h4>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-service">
-								<img class="d-block mx-auto mb-30" src="img/f6.png" alt="">
-								<h4><a href="#">Quality affordable product</a></h4>
-							</div>
+					<div class="item single-carusel relative">
+						<div class="image-wrap">
+							<img class="img-fluid" src="img/screenshot_web_3.png" alt="">
 						</div>
 					</div>
 				</div>
-			</section>
-			<!-- End service Area -->
+			</div>
+		</div>
+	</section>
+	<!-- End feature Area -->
 
-			<!-- Start feature Area -->
-				<section class="feature-area section-gap">
-					<div class="container">
-						<div class="row d-flex justify-content-center">
-							<div class="menu-content pb-60 col-lg-8">
-								<div class="title text-center">
-									<h1 class="mb-10">Next stop, screenshots</h1>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="active-feature-carusel">
-								<div class="item single-carusel relative">
-									<div class="image-wrap">
-										<img class="img-fluid" src="img/screenshot_1.png" alt="">
-									</div>
-								</div>
-								<div class="item single-carusel relative">
-									<div class="image-wrap">
-										<img class="img-fluid" src="img/screenshot_2.png" alt="">
-									</div>
-
-								</div>
-								<div class="item single-carusel relative">
-									<div class="image-wrap">
-										<img class="img-fluid" src="img/screenshot_3.png" alt="">
-									</div>
-								</div>
-								<div class="item single-carusel relative">
-									<div class="image-wrap">
-										<img class="img-fluid" src="img/screenshot_4.png" alt="">
-									</div>
-								</div>
-								<div class="item single-carusel relative">
-									<div class="image-wrap">
-										<img class="img-fluid" src="img/screenshot_web_1.png" alt="">
-									</div>
-								</div>
-								<div class="item single-carusel relative">
-									<div class="image-wrap">
-										<img class="img-fluid" src="img/screenshot_web_2.png" alt="">
-									</div>
-								</div>
-								<div class="item single-carusel relative">
-									<div class="image-wrap">
-										<img class="img-fluid" src="img/screenshot_web_3.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- End feature Area -->
-
-
-			<!-- Start price Area -->
-			<section class="price-area section-gap" id="price">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Choose the Perfect Plan for you</h1>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="single-price">
-								<div class="top-sec d-flex justify-content-between">
-									<div>
-										<h4>Android App</h4>
-										<span><h1>P5,000.00</h1>ONE TIME FEE</span>
-										<p>
-											Pay only for monthly maintenance and service fee
-										</p>
-									</div>
-								</div>
-								<div class="bottom-sec">
-									<div class="row">
-										<div class="col-auto" style="padding-right:0px;">
-											<h3>P1,200.00</h3>
-										</div>
-										<div class="col align-self-center no-padding">
-											&nbsp;/month
-										</div>
-									</div>
-
-									<p style="margin-top:10px;">
-										We'll handle all the things for your online business to keep it running.
-									</p>
-								</div>
-								<div class="end-sec">
-									<ul>
-										<li>Secure server</li>
-										<li>Downloadable on <b>Google Play</b></li>
-										<li>Hundred daily transactions</li>
-										<li>Up to 100 products</li>
-										<li>1 admin account</li>
-										<li>1 delivery personel account</li>
-										<li>Dedicated Android app for delivery personel</li>
-										<li>Future app updates</li>
-										<li>Sales reports</li>
-										<li>Product support</li>
-										<li>&nbsp;</li>
-									</ul>
-									<button class="primary-btn price-btn mt-20">Purchase Plan</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-price">
-								<div class="top-sec d-flex justify-content-between">
-									<div>
-										<h4>Website</h4>
-										<span><h1>P-,---.--</h1>ONE TIME FEE</span>
-										<p>
-											Pay only for domain registration, monthly maintenance and service fee
-										</p>
-									</div>
-								</div>
-								<div class="bottom-sec">
-									<div class="row">
-										<div class="col-auto" style="padding-right:0px;">
-											<h3>Coming soon!</h3>
-										</div>
-										<div class="col align-self-center no-padding">
-
-										</div>
-									</div>
-
-									<p style="margin-top:10px;">
-										We'll handle all the things for your online business to keep it running.
-									</p>
-								</div>
-								<div class="end-sec">
-									<ul>
-										<li>Secure server</li>
-										<li>Hosted on our secure server</li>
-										<li>Hundred daily transactions</li>
-										<li>Up to 100 products</li>
-										<li>1 admin account</li>
-										<li>1 delivery personel account</li>
-										<li>Dedicated Android app for delivery personel</li>
-										<li>Future app updates</li>
-										<li>Sales reports</li>
-										<li>Product support</li>
-										<li>&nbsp;</li>
-									</ul>
-									<button class="primary-btn price-btn mt-20">Purchase Plan</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-price">
-								<div class="top-sec d-flex justify-content-between">
-									<div>
-										<h4>Website & Android App</h4>
-										<span><h1>P-,---.--</h1>ONE TIME FEE</span>
-										<p>
-											Pay only for domain registration, monthly maintenance and service fee
-										</p>
-									</div>
-								</div>
-								<div class="bottom-sec">
-									<div class="row">
-										<div class="col-auto" style="padding-right:0px;">
-											<h3>Coming soon!</h3>
-										</div>
-										<div class="col align-self-center no-padding">
-
-										</div>
-									</div>
-
-									<p style="margin-top:10px;">
-										We'll handle all the things for your online business to keep it running.
-									</p>
-								</div>
-								<div class="end-sec">
-									<ul>
-										<li>Secure server</li>
-										<li>Hosted on our secure server</li>
-										<li>Downloadable on <b>Google Play</b></li>
-										<li>Hundred daily transactions</li>
-										<li>Up to 100 products</li>
-										<li>1 admin account</li>
-										<li>1 delivery personel account</li>
-										<li>Dedicated Android app for delivery personel</li>
-										<li>Future app updates</li>
-										<li>Sales reports</li>
-										<li>Product support</li>
-									</ul>
-									<button class="primary-btn price-btn mt-20">Purchase Plan</button>
-								</div>
-							</div>
-						</div>
-
+	<!-- Start service Area -->
+	<section class="service-area section-gap">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-60 col-lg-8">
+					<div class="title text-center">
+						<h1 class="mb-10">What made us unique?</h1>
+						<p>(We love bikes!)</p>
 					</div>
 				</div>
-			</section>
-			<!-- End price Area -->
-
-			<!-- Start faq Area -->
-			<section class="faq-area section-gap" id="faq">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Frequently Asked Questions</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4  col-md-6 mb-30">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f1.png" alt="">
+						<h4><a href="#">Real-time monitoring</a></h4>
 					</div>
-					<div class="row d-flex align-items-center">
-						<div class="counter-left col-lg-3 col-md-3">
-							<div class="single-facts">
-								<h2 class="counter">5962</h2>
-								<p>Projects Completed</p>
-							</div>
-							<div class="single-facts">
-								<h2 class="counter">2394</h2>
-								<p>New Projects</p>
-							</div>
-							<div class="single-facts">
-								<h2 class="counter">1439</h2>
-								<p>Tickets Submitted</p>
-							</div>
-							<div class="single-facts">
-								<h2 class="counter">933</h2>
-								<p>Cup of Coffee</p>
-							</div>
-						</div>
-						<div class="faq-content col-lg-9 col-md-9">
-							<div class="single-faq">
-								<h2>
-									Are your Templates responsive?
-								</h2>
+				</div>
+				<div class="col-lg-4  col-md-6 mb-30">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f2.png" alt="">
+						<h4><a href="#">Fast updates</a></h4>
+					</div>
+				</div>
+				<div class="col-lg-4  col-md-6 mb-30">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f3.png" alt="">
+						<h4><a href="#">Great Support</a></h4>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 ">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f4.png" alt="">
+						<h4><a href="#">We don't get sales commision</a></h4>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 ">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f5.png" alt="">
+						<h4><a href="#">Professional Service</a></h4>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 ">
+					<div class="single-service">
+						<img class="d-block mx-auto mb-30" src="img/f6.png" alt="">
+						<h4><a href="#">Quality affordable product</a></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End service Area -->
+
+	<!-- Start price Area -->
+	<section class="price-area section-gap" id="price">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-60 col-lg-8">
+					<div class="title text-center">
+						<h1 class="mb-10">Choose the Perfect Plan for you</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="single-price">
+						<div class="top-sec d-flex justify-content-between">
+							<div>
+								<h4>Android App</h4>
+								<span>
+									<h1>P5,000.00</h1>ONE TIME FEE
+								</span>
 								<p>
-									“Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
-								</p>
-							</div>
-							<div class="single-faq">
-								<h2>
-									Does it have all the plugin as mentioned?
-								</h2>
-								<p>
-									“Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
-								</p>
-							</div>
-							<div class="single-faq">
-								<h2>
-									Can i use the these theme for my client?
-								</h2>
-								<p>
-									“Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
+									Pay only for monthly maintenance and service fee
 								</p>
 							</div>
 						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End faq Area -->
+						<div class="bottom-sec">
+							<div class="row">
+								<div class="col-auto" style="padding-right:0px;">
+									<h3>P1,200.00</h3>
+								</div>
+								<div class="col align-self-center no-padding">
+									&nbsp;/month
+								</div>
+							</div>
 
-			<!-- Start call-to-action Area -->
-			<section class="call-to-action-area section-gap">
-				<div class="container">
-					<div class="row justify-content-center top">
-						<div class="col-lg-12">
-							<h1 class="text-white text-center">Download This App Today!</h1>
-							<p class="text-white text-center mt-30">
-								It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological advancement are concerned.
+							<p style="margin-top:10px;">
+								We'll handle all the things for your online business to keep it running.
 							</p>
 						</div>
-					</div>
-					<div class="row justify-content-center d-flex">
-						<div class="download-button d-flex flex-row justify-content-center mt-30">
-							<div class="buttons flex-row d-flex">
-								<i class="fa fa-apple" aria-hidden="true"></i>
-								<div class="desc">
-									<a href="#">
-										<p>
-											<span>Available</span> <br>
-											on App Store
-										</p>
-									</a>
-								</div>
-							</div>
-							<div class="buttons flex-row d-flex">
-								<i class="fa fa-android" aria-hidden="true"></i>
-								<div class="desc">
-									<a href="#">
-										<p>
-											<span>Available</span> <br>
-											on Play Store
-										</p>
-									</a>
-								</div>
-							</div>
+						<div class="end-sec">
+							<ul>
+								<li>Secure server</li>
+								<li>Downloadable on <b>Google Play</b></li>
+								<li>Hundred daily transactions</li>
+								<li>Up to 100 products</li>
+								<li>1 admin account</li>
+								<li>1 delivery personel account</li>
+								<li>Dedicated Android app for delivery personel</li>
+								<li>Future app updates</li>
+								<li>Sales reports</li>
+								<li>Product support</li>
+								<li>&nbsp;</li>
+							</ul>
+							<center>
+								<a href="https://m.me/RadioActivePotatoProject"
+									class="primary-btn price-btn mt-20">Contact us</a>
+							</center>
 						</div>
 					</div>
 				</div>
-			</section>
-			<!-- End call-to-action Area -->
 
+			</div>
+		</div>
+	</section>
+	<!-- End price Area -->
 
-			<!-- start footer Area -->
-			<footer class="footer-area section-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3  col-md-12">
-							<div class="single-footer-widget">
-								<h6>Top Products</h6>
-								<ul class="footer-nav">
-									<li><a href="#">Managed Website</a></li>
-									<li><a href="#">Manage Reputation</a></li>
-									<li><a href="#">Power Tools</a></li>
-									<li><a href="#">Marketing Service</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-6  col-md-12">
-							<div class="single-footer-widget newsletter">
-								<h6>Newsletter</h6>
-								<p>You can trust us. we only send promo offers, not a single spam.</p>
-								<div id="mc_embed_signup">
-									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-
-										<div class="form-group row" style="width: 100%">
-											<div class="col-lg-8 col-md-12">
-												<input name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-												<div style="position: absolute; left: -5000px;">
-													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-												</div>
-											</div>
-
-											<div class="col-lg-4 col-md-12">
-												<button class="nw-btn primary-btn">Subscribe<span class="lnr lnr-arrow-right"></span></button>
-											</div>
-										</div>
-										<div class="info"></div>
-									</form>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3  col-md-12">
-							<div class="single-footer-widget mail-chimp">
-								<h6 class="mb-20">Instragram Feed</h6>
-								<ul class="instafeed d-flex flex-wrap">
-									<li><img src="img/i1.jpg" alt=""></li>
-									<li><img src="img/i2.jpg" alt=""></li>
-									<li><img src="img/i3.jpg" alt=""></li>
-									<li><img src="img/i4.jpg" alt=""></li>
-									<li><img src="img/i5.jpg" alt=""></li>
-									<li><img src="img/i6.jpg" alt=""></li>
-									<li><img src="img/i7.jpg" alt=""></li>
-									<li><img src="img/i8.jpg" alt=""></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="row footer-bottom d-flex justify-content-between">
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						<div class="col-lg-4 col-sm-12 footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
+	<!-- Start faq Area -->
+	<section class="faq-area section-gap" id="faq">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-60 col-lg-8">
+					<div class="title text-center">
+						<h1 class="mb-10">Frequently Asked Questions</h1>
+						<p>FAQs!</p>
 					</div>
 				</div>
-			</footer>
-			<!-- End footer Area -->
+			</div>
+			<div class="row d-flex align-items-center">
+				<div class="faq-content col-lg-9 col-md-9">
+					<div class="single-faq">
+						<h2>
+							What are the supported platforms?
+						</h2>
+						<p>
+							Right now, we only support Android (Lollipop to latest). We are planning to support
+							web-based eCommerce soon.
+						</p>
+					</div>
+					<div class="single-faq">
+						<h2>
+							I can't understand the available plan. Explain to me like I'm five.
+						</h2>
+						<p>
+							You need to pay the one-time fee of P5,000.00. Then you need to pay P1,200.00 per month.
+							So you need to pay P6,200.00 for your first month, after that you only need to pay P1,200
+							monthly.
+						</p>
+					</div>
+					<div class="single-faq">
+						<h2>
+							What are the available payment methods?
+						</h2>
+						<p>
+							At this time, we only support cash on delivery and cash on pick-up.
+						</p>
+					</div>
 
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>
-			<script src="js/parallax.min.js"></script>
-			<script src="js/owl.carousel.min.js"></script>
-			<script src="js/jquery.sticky.js"></script>
-			<script src="js/hexagons.min.js"></script>
-			<script src="js/jquery.counterup.min.js"></script>
-			<script src="js/waypoints.min.js"></script>
-			<script src="js/main.js"></script>
+					<div class="single-faq">
+						<h2>
+							What are the available delivery methods?
+						</h2>
+						<p>
+						<ul>
+							<li>Cash on delivery</li>
+							<li>Cash on pick-up</li>
+							<li>Third party couriers (Grab, Lalamove, etc). Send as a message if you need this feature
+								so we can discuss the limitations.
+							</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End faq Area -->
 
-			<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-			<script src="js/vue-color.min.js"></script>
-			<script src="js/quicke.js"></script>
-		</body>
-	</html>
+	<!-- start footer Area -->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3  col-md-12">
+					<div class="single-footer-widget">
+						<h6>Useful links</h6>
+						<ul class="footer-nav">
+							<li><a href="#">Quick E-How</a></li>
+							<li><a href="https://m.me/RadioActivePotatoProject">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row footer-bottom d-flex justify-content-between">
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is
+					made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+						target="_blank">Colorlib</a></p>
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+		crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/hexagons.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="js/vue-color.min.js"></script>
+	<script src="js/quicke.js"></script>
+</body>
+
+</html>
